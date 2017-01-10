@@ -6,7 +6,8 @@ use \W\Controller\Controller;
 class ArticlesController extends Controller
 {
     public function afficher()
-     {
-         $this -> show('articles/home');
-     }
+    {
+        $this -> show('articles/home');
+    }
+
 }
