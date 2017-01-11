@@ -3,26 +3,13 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \W\Model\UsersModel;
 
-class UserController extends Controller
-{
-    public function home()
-    {
-        $this->show('user/home');
-    }
-
-    public function login()
-    {
-        $this->show('user/login');
-    }
-
-    public function logout()
-    {
-        $this->show('user/logout');
-    }
-
-    public function inscription()
-    {
-        $this->show('user/inscription');
-    }
+class UserController extends \W\Controller\Controller {
+  public function inscriptionUser() {
+    $user= new UsersModel();
+    $test = $user -> getUserByUsernameOrEmail('supermario@gmail.com');
+    var_dump($test);
+    $this -> show('user/User_view');
+  }
 }
