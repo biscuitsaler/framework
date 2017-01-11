@@ -4,11 +4,11 @@ namespace Controller;
 
 use \W\Controller\Controller;
 
-class DefaultController extends Controller
+class ArticleController extends Controller
 {
     public function home()
     {
-        $this->show('default/home');
+        $this -> show('article/home');
     }
 
 }
