@@ -8,7 +8,7 @@ use \W\Model\UsersModel;
 class UserController extends \W\Controller\Controller {
   public function inscriptionUser() {
     $user= new UsersModel();
-    $test = $user -> getUserByUsernameOrEmail('supermario@gmail.com');
+    $test = $user -> getUserByUsernameOrEmail('unsinge@live.fr');
     var_dump($test);
     $this -> show('user/User_view');
   }
